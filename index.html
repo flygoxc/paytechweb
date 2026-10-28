@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PayTech Custom Architecture</title>
+
+<style>
+body{margin:0;font-family:Inter,"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;color:#14213D;background:#fff}
+a{color:#1456D9}a:hover{color:#0B3FA8}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.sec{padding:88px 0}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;color:#1456D9;margin:0 0 12px}
+.h2{font-size:36px;line-height:1.3;margin:0 0 16px;color:#0A2150}
+.lead{font-size:17px;line-height:1.7;color:#4A5B78;margin:0 0 48px;max-width:720px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.card{background:#fff;border:1px solid #D9E3F3;border-radius:12px;padding:28px}
+.card:hover{border-color:#1456D9}
+.card h3{margin:0 0 10px;font-size:20px;color:#0A2150}
+.card p{margin:0;font-size:15px;line-height:1.7;color:#4A5B78}
+.num{display:inline-block;font-size:13px;font-weight:700;color:#1456D9;background:#E8F0FD;border-radius:6px;padding:4px 10px;margin-bottom:16px}
+.btn{display:inline-block;padding:14px 28px;border-radius:8px;font-weight:600;font-size:16px;text-decoration:none}
+.btn-p{background:#1456D9;color:#fff}.btn-p:hover{background:#0B3FA8;color:#fff}
+.btn-g{border:1px solid #7FA6F0;color:#fff}.btn-g:hover{background:#14336F;color:#fff}
+.nl{color:#14213D;text-decoration:none;font-size:15px;padding:12px 4px}.nl:hover{color:#1456D9}
+.lyr{display:flex;justify-content:space-between;gap:12px;background:#12306E;border:1px solid #2A4C93;border-radius:8px;padding:14px 18px;color:#fff;font-size:15px}
+.lyr span:last-child{color:#9FC1FF;font-size:13px}
+.tag{margin:0 0 12px;font-size:13px;font-weight:700;color:#0A2150;background:#E8F0FD;border-radius:6px;padding:4px 10px;display:inline-block}
+.fl{display:block;font-size:14px;font-weight:600;color:#0A2150;margin:0 0 6px}
+.fi{width:100%;box-sizing:border-box;padding:12px 14px;min-height:44px;border:1px solid #8FA5CC;border-radius:8px;font:inherit;font-size:15px;color:#14213D;background:#fff}
+</style>
+
+</head>
+<body>
+
+<div style="width:100%;background:#fff">
+
+<header style="border-bottom:1px solid #D9E3F3;background:#fff">
+<div class="wrap" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;min-height:72px">
+<div style="display:flex;align-items:center;gap:12px">
+<svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#1456D9"/><path d="M10 23V9h7a5 5 0 010 10h-4" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<strong style="font-size:18px;color:#0A2150">PayTech Custom Architecture</strong>
+</div>
+<nav style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px">
+<a class="nl" href="#products">产品</a>
+<a class="nl" href="#solutions">解决方案</a>
+<a class="nl" href="#tech">技术能力</a>
+<a class="nl" href="#cases">案例</a>
+<a class="nl" href="#team">团队</a>
+<a class="nl" href="contact.html">联系我们</a>
+<a class="nl" href="en/index.html">EN</a>
+<a class="btn btn-p" href="contact.html" style="padding:10px 20px;font-size:15px">合作申请</a>
+</nav>
+</div>
+</header>
+
+<section style="background:#0A2150;color:#fff">
+<div class="wrap" style="padding-top:96px;padding-bottom:96px;display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:56px;align-items:center">
+<div>
+<p style="margin:0 0 16px;font-size:13px;font-weight:700;letter-spacing:.12em;color:#8FB6FF">跨境支付软件定制开发</p>
+<h1 style="margin:0 0 24px;font-size:48px;line-height:1.25;font-weight:700">为跨境业务量身打造的支付系统架构</h1>
+<p style="margin:0 0 36px;font-size:18px;line-height:1.8;color:#C3D4F2">从微信、支付宝收单与外卡收单，到跨境汇款、付款和 VCC 发卡，PayTech Custom Architecture 提供可私有化部署、可深度定制的全链路支付软件。</p>
+<div style="display:flex;flex-wrap:wrap;gap:16px">
+<a class="btn btn-p" href="contact.html">获取解决方案</a>
+<a class="btn btn-g" href="#products">了解产品</a>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div class="lyr"><span>商户 / 平台 / 应用</span><span>接入层</span></div>
+<div class="lyr" style="background:#1456D9;border-color:#4C86F0"><span>统一支付网关与路由</span><span style="color:#fff">核心层</span></div>
+<div class="lyr"><span>微信支付 · 支付宝 · 外卡 · 汇款 · 付款 · VCC</span><span>渠道层</span></div>
+<div class="lyr"><span>账务 · 清结算 · 对账 · 风控</span><span>数据层</span></div>
+</div>
+</div>
+</section>
+
+<section id="products" class="sec">
+<div class="wrap">
+<p class="eyebrow">产品</p>
+<h2 class="h2">覆盖跨境资金流的核心系统</h2>
+<p class="lead">每个系统都可独立交付，也可组合为统一的跨境支付平台，并按业务与合规要求定制。</p>
+<div class="grid">
+<div class="card"><span class="num">01</span><h3>微信 / 支付宝收单系统</h3><p>面向境内外商户的扫码、小程序与 H5 收款，支持多商户进件、分账与退款管理。</p></div>
+<div class="card"><span class="num">02</span><h3>外卡收单系统</h3><p>对接国际卡组织与收单渠道，支持多币种结算、3D Secure 与拒付处理。</p></div>
+<div class="card"><span class="num">03</span><h3>跨境汇款系统</h3><p>覆盖报价、换汇、收款人管理与到账追踪，支持多通道智能路由。</p></div>
+<div class="card"><span class="num">04</span><h3>付款 / 代付系统</h3><p>批量付款、供应商付款与分润发放，具备审批流、限额控制与失败重试。</p></div>
+<div class="card"><span class="num">05</span><h3>VCC 虚拟卡发卡系统</h3><p>按需开卡、额度与有效期管控、交易授权与实时通知，适用于广告投放与差旅采购。</p></div>
+<div class="card"><span class="num">06</span><h3>清结算与商户后台</h3><p>统一账务、自动对账、费率配置与报表，为以上各系统提供运营支撑。</p></div>
+</div>
+</div>
+</section>
+
+<section id="solutions" class="sec" style="background:#F3F7FD">
+<div class="wrap">
+<p class="eyebrow">解决方案</p>
+<h2 class="h2">面向不同行业的场景化方案</h2>
+<p class="lead">我们先理解您的资金流与合规边界，再组合产品模块，交付可上线运营的完整方案。</p>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr))">
+<div class="card"><h3>跨境电商收款</h3><p>多平台、多币种收款，自动换汇与结算，缩短回款周期。</p><a href="sol-ecommerce.html" style="display:inline-block;margin-top:16px;font-weight:600;text-decoration:none">了解详情 →</a></div>
+<div class="card"><h3>出海 SaaS 与独立站</h3><p>整合外卡与本地支付方式，提升支付成功率并简化订阅计费。</p><a href="sol-saas.html" style="display:inline-block;margin-top:16px;font-weight:600;text-decoration:none">了解详情 →</a></div>
+<div class="card"><h3>入境消费与境外商户</h3><p>为境外商户接入微信、支付宝，服务中国游客与消费者。</p><a href="sol-inbound.html" style="display:inline-block;margin-top:16px;font-weight:600;text-decoration:none">了解详情 →</a></div>
+<div class="card"><h3>企业跨境付款</h3><p>供应商付款、薪酬与佣金发放，配合 VCC 实现费用精细管理。</p><a href="sol-b2b.html" style="display:inline-block;margin-top:16px;font-weight:600;text-decoration:none">了解详情 →</a></div>
+</div>
+</div>
+</section>
+
+<section id="tech" class="sec">
+<div class="wrap">
+<p class="eyebrow">技术能力</p>
+<h2 class="h2">以金融级标准构建的技术底座</h2>
+<p class="lead">架构设计围绕高可用、可审计与可扩展展开，便于对接新渠道、适配新市场。</p>
+<div class="grid">
+<div class="card"><h3>高可用与高并发</h3><p>服务无状态化与多活部署，交易链路异步化，支持水平扩展与灰度发布。</p></div>
+<div class="card"><h3>安全与合规设计</h3><p>敏感数据加密与分级存储，权限最小化与完整审计日志，按 PCI DSS 要求设计。</p></div>
+<div class="card"><h3>渠道适配层</h3><p>统一接口抽象，新增支付渠道只需实现适配器，不影响上层业务。</p></div>
+<div class="card"><h3>账务与对账引擎</h3><p>双边记账、幂等处理与自动对账，确保每一笔资金可追溯。</p></div>
+<div class="card"><h3>实时风控</h3><p>规则引擎与名单管理，支持限额、频次与异常交易的实时拦截。</p></div>
+<div class="card"><h3>开放 API 与私有化</h3><p>标准化 RESTful API 与签名机制，支持公有云、私有云与本地机房部署。</p></div>
+</div>
+</div>
+</section>
+
+<section id="cases" class="sec" style="background:#F3F7FD"><div class="wrap"><p class="eyebrow">案例</p><h2 class="h2">真实场景中的交付实践</h2><p class="lead">以下为典型场景示例，请替换为贵司可公开的真实客户案例。</p><div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))"><div class="card"><span class="tag">跨境电商</span><h3>多平台收款与自动对账</h3><p>挑战：多平台、多币种资金分散，人工对账耗时。方案：统一收款网关与自动对账引擎。成果：[填写可量化结果]</p></div><div class="card"><span class="tag">入境消费</span><h3>境外商户接入微信与支付宝</h3><p>挑战：境外商户缺少本地化收款能力。方案：多商户进件与分账系统。成果：[填写可量化结果]</p></div><div class="card"><span class="tag">企业付款</span><h3>VCC 按需开卡与额度管控</h3><p>挑战：广告与采购费用分散，难以控制。方案：虚拟卡发卡与授权系统。成果：[填写可量化结果]</p></div></div></div></section>
+<section id="team" class="sec">
+<div class="wrap">
+<p class="eyebrow">团队</p>
+<h2 class="h2">懂支付业务，也懂工程交付</h2>
+<p class="lead">核心成员来自支付、金融科技与互联网基础架构领域，覆盖从需求到运维的完整交付链路。</p>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr))">
+<div class="card"><div aria-hidden="true" style="width:64px;height:64px;border-radius:50%;background:#1456D9;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:700;margin-bottom:16px">A</div><span class="tag">架构与研发</span><h3>Alex</h3><p>[职位与经验简介，例如：主导过多个支付核心系统设计]</p></div>
+<div class="card"><div aria-hidden="true" style="width:64px;height:64px;border-radius:50%;background:#1456D9;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:700;margin-bottom:16px">O</div><span class="tag">支付业务与产品</span><h3>Owen</h3><p>[职位与经验简介，例如：熟悉收单、汇款与发卡业务流程]</p></div>
+<div class="card"><div aria-hidden="true" style="width:64px;height:64px;border-radius:50%;background:#1456D9;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:700;margin-bottom:16px">H</div><span class="tag">风控与合规</span><h3>Harrison</h3><p>[职位与经验简介，例如：负责风控策略与合规对接]</p></div>
+<div class="card"><div aria-hidden="true" style="width:64px;height:64px;border-radius:50%;background:#1456D9;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:700;margin-bottom:16px">T</div><span class="tag">交付与运维</span><h3>Thomas</h3><p>[职位与经验简介，例如：负责部署、监控与 7×24 支持]</p></div>
+</div>
+</div>
+</section>
+
+<section id="partners" class="sec" style="background:#F3F7FD"><div class="wrap"><p class="eyebrow">合作伙伴</p><h2 class="h2">与支付生态伙伴共同服务客户</h2><p class="lead">以下为与我们合作的卡组织、支付机构与企业。</p><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px"><div style="background:#fff;border:1px solid #D9E3F3;border-radius:12px;height:104px;box-sizing:border-box;padding:16px;display:flex;align-items:center;justify-content:center"><img src="assets/logos/visa.png" alt="Visa" style="max-width:100%;max-height:56px;width:auto;height:auto"></div><div style="background:#fff;border:1px solid #D9E3F3;border-radius:12px;height:104px;box-sizing:border-box;padding:16px;display:flex;align-items:center;justify-content:center"><img src="assets/logos/mastercard.png" alt="Mastercard" style="max-width:100%;max-height:56px;width:auto;height:auto"></div><div style="background:#fff;border:1px solid #D9E3F3;border-radius:12px;height:104px;box-sizing:border-box;padding:16px;display:flex;align-items:center;justify-content:center"><img src="assets/logos/unionpay.png" alt="UnionPay 银联" style="max-width:100%;max-height:56px;width:auto;height:auto"></div><div style="background:#fff;border:1px solid #D9E3F3;border-radius:12px;height:104px;box-sizing:border-box;padding:16px;display:flex;align-items:center;justify-content:center"><img src="assets/logos/amex.png" alt="American Express" style="max-width:100%;max-height:56px;width:auto;height:auto"></div><div style="background:#fff;border:1px solid #D9E3F3;border-radius:12px;height:104px;box-sizing:border-box;padding:16px;display:flex;align-items:center;justify-content:center"><img src="assets/logos/jcb.png" alt="JCB" style="max-width:100%;max-height:56px;width:auto;height:auto"></div><div style="background:#fff;border:1px solid #D9E3F3;border-radius:12px;height:104px;box-sizing:border-box;padding:16px;display:flex;align-items:center;justify-content:center"><img src="assets/logos/discover.png" alt="Discover" style="max-width:100%;max-height:56px;width:auto;height:auto"></div><div style="background:#fff;border:1px solid #D9E3F3;border-radius:12px;height:104px;box-sizing:border-box;padding:16px;display:flex;align-items:center;justify-content:center"><img src="assets/logos/diners.png" alt="Diners Club International" style="max-width:100%;max-height:56px;width:auto;height:auto"></div><div style="background:#fff;border:1px solid #D9E3F3;border-radius:12px;height:104px;box-sizing:border-box;padding:16px;display:flex;align-items:center;justify-content:center"><img src="assets/logos/pingpong.png" alt="PingPong" style="max-width:100%;max-height:56px;width:auto;height:auto"></div><div style="background:#fff;border:1px solid #D9E3F3;border-radius:12px;height:104px;box-sizing:border-box;padding:16px;display:flex;align-items:center;justify-content:center"><img src="assets/logos/globalpayments.png" alt="Global Payments" style="max-width:100%;max-height:56px;width:auto;height:auto"></div><div style="background:#fff;border:1px solid #D9E3F3;border-radius:12px;height:104px;box-sizing:border-box;padding:16px;display:flex;align-items:center;justify-content:center"><img src="assets/logos/xiaomi.png" alt="Xiaomi" style="max-width:100%;max-height:56px;width:auto;height:auto"></div></div></div></section>
+<section id="contact" style="background:#0A2150;color:#fff"><div class="wrap" style="padding-top:72px;padding-bottom:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px 48px"><div style="max-width:720px"><h2 style="margin:0 0 12px;font-size:32px;line-height:1.3">与我们沟通您的跨境支付需求</h2><p style="margin:0;font-size:17px;line-height:1.8;color:#C3D4F2">告诉我们您的业务场景、目标市场与上线时间，我们将提供架构建议与报价方案。</p></div><a class="btn btn-p" href="contact.html">提交合作申请</a></div></section>
+
+<footer style="background:#071939;color:#9FB4D9;font-size:14px">
+<div class="wrap" style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-top:28px;padding-bottom:28px">
+<span>© 2026 PayTech Custom Architecture. All rights reserved.</span>
+<span>跨境支付系统定制开发</span>
+</div>
+</footer>
+
+</div>
+
+</body>
+</html>
